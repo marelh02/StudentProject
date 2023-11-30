@@ -1,0 +1,14 @@
+Starting a MySQL instance is simple:
+
+dans ma machine:
+docker run -d -p 3306:3306 --name mysql1 -e MYSQL_ROOT_PASSWORD=root mysql
+
+
+
+
+open mysql shell:
+
+docker exec -it mysql1 mysql -uroot -p
+
+
+docker run -d -p 3307:3306 --name mysql2 -e MYSQL_ROOT_PASSWORD=root
